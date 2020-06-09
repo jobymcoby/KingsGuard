@@ -1,2 +1,2 @@
 # KingsGuard
-A video game
+A video game about defending a kingdom.
