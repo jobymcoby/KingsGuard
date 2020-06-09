@@ -1,0 +1,645 @@
+fileFormatVersion: 2
+guid: 46f42c30b32812d498e135d94f5bef5b
+ScriptedImporter:
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: NewFencer_GO/NewFencer_GO
+  - first:
+      1: 100002
+    second: NewFencer_GO/NewFencer_GO/Butt copy 3
+  - first:
+      1: 100004
+    second: NewFencer_GO/NewFencer_GO/Head copy 3
+  - first:
+      1: 100006
+    second: NewFencer_GO/NewFencer_GO/Left Arm copy 3
+  - first:
+      1: 100008
+    second: NewFencer_GO/NewFencer_GO/Left Leg copy 3
+  - first:
+      1: 100010
+    second: NewFencer_GO/NewFencer_GO/Right Arm copy 3
+  - first:
+      1: 100012
+    second: NewFencer_GO/NewFencer_GO/Right Leg copy 3
+  - first:
+      1: 100014
+    second: NewFencer_GO/NewFencer_GO/Torso copy 3
+  - first:
+      1: 100016
+    second: NewFencer_GO/NewFencer_GO/bone_1
+  - first:
+      1: 100018
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_2
+  - first:
+      1: 100020
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_2/bone_3
+  - first:
+      1: 100022
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_2/bone_3/bone_4
+  - first:
+      1: 100024
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_2/bone_3/bone_5
+  - first:
+      1: 100026
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_2/bone_3/bone_5/bone_6
+  - first:
+      1: 100028
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_2/bone_3/bone_7
+  - first:
+      1: 100030
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_2/bone_3/bone_7/bone_8
+  - first:
+      1: 100032
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_9
+  - first:
+      1: 100034
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_9/bone_10
+  - first:
+      1: 100036
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_9/bone_10/bone_11
+  - first:
+      1: 100038
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_12
+  - first:
+      1: 100040
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_12/bone_13
+  - first:
+      1: 100042
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_12/bone_13/bone_14
+  - first:
+      4: 400000
+    second: NewFencer_GO/NewFencer_GO/Transform
+  - first:
+      4: 400002
+    second: NewFencer_GO/NewFencer_GO/Butt copy 3/Transform
+  - first:
+      4: 400004
+    second: NewFencer_GO/NewFencer_GO/Head copy 3/Transform
+  - first:
+      4: 400006
+    second: NewFencer_GO/NewFencer_GO/Left Arm copy 3/Transform
+  - first:
+      4: 400008
+    second: NewFencer_GO/NewFencer_GO/Left Leg copy 3/Transform
+  - first:
+      4: 400010
+    second: NewFencer_GO/NewFencer_GO/Right Arm copy 3/Transform
+  - first:
+      4: 400012
+    second: NewFencer_GO/NewFencer_GO/Right Leg copy 3/Transform
+  - first:
+      4: 400014
+    second: NewFencer_GO/NewFencer_GO/Torso copy 3/Transform
+  - first:
+      4: 400016
+    second: NewFencer_GO/NewFencer_GO/bone_1/Transform
+  - first:
+      4: 400018
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_2/Transform
+  - first:
+      4: 400020
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_2/bone_3/Transform
+  - first:
+      4: 400022
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_2/bone_3/bone_4/Transform
+  - first:
+      4: 400024
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_2/bone_3/bone_5/Transform
+  - first:
+      4: 400026
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_2/bone_3/bone_5/bone_6/Transform
+  - first:
+      4: 400028
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_2/bone_3/bone_7/Transform
+  - first:
+      4: 400030
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_2/bone_3/bone_7/bone_8/Transform
+  - first:
+      4: 400032
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_9/Transform
+  - first:
+      4: 400034
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_9/bone_10/Transform
+  - first:
+      4: 400036
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_9/bone_10/bone_11/Transform
+  - first:
+      4: 400038
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_12/Transform
+  - first:
+      4: 400040
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_12/bone_13/Transform
+  - first:
+      4: 400042
+    second: NewFencer_GO/NewFencer_GO/bone_1/bone_12/bone_13/bone_14/Transform
+  - first:
+      28: 2800000
+    second: NewFencer
+  - first:
+      212: 21200000
+    second: NewFencer_GO/NewFencer_GO/Butt copy 3/SpriteRenderer
+  - first:
+      212: 21200002
+    second: NewFencer_GO/NewFencer_GO/Head copy 3/SpriteRenderer
+  - first:
+      212: 21200004
+    second: NewFencer_GO/NewFencer_GO/Left Arm copy 3/SpriteRenderer
+  - first:
+      212: 21200006
+    second: NewFencer_GO/NewFencer_GO/Left Leg copy 3/SpriteRenderer
+  - first:
+      212: 21200008
+    second: NewFencer_GO/NewFencer_GO/Right Arm copy 3/SpriteRenderer
+  - first:
+      212: 21200010
+    second: NewFencer_GO/NewFencer_GO/Right Leg copy 3/SpriteRenderer
+  - first:
+      212: 21200012
+    second: NewFencer_GO/NewFencer_GO/Torso copy 3/SpriteRenderer
+  - first:
+      213: 21300000
+    second: 1b5c34c6e5841ff46a521ba7ea828391
+  - first:
+      213: 21300002
+    second: 9f9e58090dc590a41844ce90402acc2f
+  - first:
+      213: 21300004
+    second: 0776e25d914874e478c0f04b4420c8ba
+  - first:
+      213: 21300006
+    second: 671128738fa547747a92a87401b1c381
+  - first:
+      213: 21300008
+    second: e4f72704e9db9a24fa34ebcef8bba3e3
+  - first:
+      213: 21300010
+    second: 09c8979be4d07f048a3ba791f83efaa1
+  - first:
+      213: 21300012
+    second: 77bffb34a28947141bdd9c815fbd1491
+  - first:
+      1001: 100100000
+    second: NewFencer_GO
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Left Arm copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 4
+      width: 6
+      height: 8
+    spriteID: 1b5c34c6e5841ff46a521ba7ea828391
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 21, y: -2}
+  - name: Left Leg copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 34
+      width: 5
+      height: 6
+    spriteID: 9f9e58090dc590a41844ce90402acc2f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 18, y: 34}
+  - name: Right Leg copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 20
+      width: 6
+      height: 6
+    spriteID: 0776e25d914874e478c0f04b4420c8ba
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 12, y: 20}
+  - name: Right Arm copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 45
+      width: 14
+      height: 8
+    spriteID: 671128738fa547747a92a87401b1c381
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -14, y: 39}
+  - name: Torso copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 28
+      width: 13
+      height: 9
+    spriteID: e4f72704e9db9a24fa34ebcef8bba3e3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -4, y: 21}
+  - name: Butt copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 4
+      width: 10
+      height: 4
+    spriteID: 09c8979be4d07f048a3ba791f83efaa1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 31, y: 0}
+  - name: Head copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 14
+      height: 16
+    spriteID: 77bffb34a28947141bdd9c815fbd1491
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -4, y: -10}
+  platformSettings:
+  - name: Default
+    overridden: 1
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 64
+  importedTextureHeight: 64
+  documentSize: {x: 32, y: 32}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 64
+  textureActualHeight: 64
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Left Arm copy 3
+    spriteName: Left Arm copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1b5c34c6e5841ff46a521ba7ea828391
+    layerID: 40
+    mosaicPosition: {x: 26, y: 4}
+  - name: Left Leg copy 3
+    spriteName: Left Leg copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9f9e58090dc590a41844ce90402acc2f
+    layerID: 39
+    mosaicPosition: {x: 26, y: 34}
+  - name: Right Leg copy 3
+    spriteName: Right Leg copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0776e25d914874e478c0f04b4420c8ba
+    layerID: 38
+    mosaicPosition: {x: 26, y: 20}
+  - name: Right Arm copy 3
+    spriteName: Right Arm copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 671128738fa547747a92a87401b1c381
+    layerID: 37
+    mosaicPosition: {x: 4, y: 45}
+  - name: Torso copy 3
+    spriteName: Torso copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e4f72704e9db9a24fa34ebcef8bba3e3
+    layerID: 36
+    mosaicPosition: {x: 4, y: 28}
+  - name: Butt copy 3
+    spriteName: Butt copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 09c8979be4d07f048a3ba791f83efaa1
+    layerID: 35
+    mosaicPosition: {x: 40, y: 4}
+  - name: Head copy 3
+    spriteName: Head copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 77bffb34a28947141bdd9c815fbd1491
+    layerID: 34
+    mosaicPosition: {x: 4, y: 4}
+  characterData:
+    bones:
+    - name: bone_1
+      position: {x: 13.420429, y: 6.208412, z: 0}
+      rotation: {x: 0, y: 0, z: 0.71547323, w: 0.6986402}
+      length: 2.6963117
+      parentId: -1
+    - name: bone_2
+      position: {x: 2.6963122, y: -0.0000009770843, z: 0}
+      rotation: {x: 0, y: 0, z: 0.0044851503, w: 0.9999899}
+      length: 3.9170651
+      parentId: 0
+    - name: bone_3
+      position: {x: 3.9170651, y: -0.0000009794555, z: 0}
+      rotation: {x: 0, y: 0, z: 0.021994349, w: 0.9997581}
+      length: 2.5104022
+      parentId: 1
+    - name: bone_4
+      position: {x: 2.5104034, y: 0.0000009103157, z: 0}
+      rotation: {x: 0, y: 0, z: -0.09181236, w: 0.9957764}
+      length: 6.0031195
+      parentId: 2
+    - name: bone_5
+      position: {x: 0.3790295, y: -4.2775354, z: 0}
+      rotation: {x: 0, y: -0, z: -0.9987295, w: 0.050391857}
+      length: 2.5430055
+      parentId: 2
+    - name: bone_6
+      position: {x: 2.5430055, y: -0.00000056319885, z: 0}
+      rotation: {x: 0, y: 0, z: -0.08868158, w: 0.9960601}
+      length: 3.3373451
+      parentId: 4
+    - name: bone_7
+      position: {x: 0.99430835, y: 3.721299, z: 0}
+      rotation: {x: 0, y: -0, z: 0.99437153, w: 0.10594945}
+      length: 2.8500402
+      parentId: 2
+    - name: bone_8
+      position: {x: 2.8500412, y: -0.00000078847563, z: 0}
+      rotation: {x: 0, y: 0, z: 0.078099184, w: 0.9969456}
+      length: 3.0812938
+      parentId: 6
+    - name: bone_9
+      position: {x: -0.38038838, y: -2.4946594, z: 0}
+      rotation: {x: 0, y: -0, z: -0.99999994, w: 0.0002990524}
+      length: 2.6321514
+      parentId: 0
+    - name: bone_10
+      position: {x: 2.6321514, y: 0.0000005736875, z: 0}
+      rotation: {x: 0, y: 0, z: -0.012210693, w: 0.99992543}
+      length: 2.7597284
+      parentId: 8
+    - name: bone_11
+      position: {x: 2.7597284, y: -0.0000011533249, z: 0}
+      rotation: {x: 0, y: 0, z: 0.68828046, w: 0.72544473}
+      length: 1.221103
+      parentId: 9
+    - name: bone_12
+      position: {x: -0.4552385, y: 2.4503603, z: 0}
+      rotation: {x: 0, y: -0, z: 0.9999292, w: 0.011902961}
+      length: 2.567188
+      parentId: 0
+    - name: bone_13
+      position: {x: 2.5671883, y: -0.00000065413656, z: 0}
+      rotation: {x: 0, y: 0, z: 0.012193597, w: 0.9999257}
+      length: 2.6321497
+      parentId: 11
+    - name: bone_14
+      position: {x: 2.6321497, y: 0.00000022926065, z: 0}
+      rotation: {x: 0, y: 0, z: 0.6984322, w: 0.7156763}
+      length: 1.2194126
+      parentId: 12
+    parts:
+    - spritePosition:
+        x: 8
+        y: 7
+        width: 3
+        height: 8
+      spriteId: 38b9e0de2f5f4e74d99bb8436c326763
+      bones: 
+      parentGroup: 0
+      order: 0
+    - spritePosition:
+        x: 10
+        y: 0
+        width: 3
+        height: 6
+      spriteId: 360461aba3b8f75449c898e905e05db9
+      bones: 0b0000000c0000000d000000
+      parentGroup: 0
+      order: 0
+    - spritePosition:
+        x: 15
+        y: 0
+        width: 3
+        height: 6
+      spriteId: 42b48cfa65873ff4e9fffdb23478747c
+      bones: 08000000090000000a00000000000000
+      parentGroup: 0
+      order: 0
+    - spritePosition:
+        x: 10
+        y: 5
+        width: 7
+        height: 3
+      spriteId: 84a50157d785c864c86015673e0d9ca6
+      bones: 08000000000000000b000000
+      parentGroup: 0
+      order: 0
+    - spritePosition:
+        x: 8
+        y: 7
+        width: 9
+        height: 8
+      spriteId: d80bce095489bb741aaf2c965bc7aee3
+      bones: 020000000100000000000000
+      parentGroup: 0
+      order: 0
+    - spritePosition:
+        x: 16
+        y: 7
+        width: 3
+        height: 8
+      spriteId: 3f89fa71024c24f4fac0b9da4ec73068
+      bones: 0400000005000000
+      parentGroup: 0
+      order: 0
+    - spritePosition:
+        x: 8
+        y: 14
+        width: 14
+        height: 15
+      spriteId: 82ee145471836f1449759935b3f79cc5
+      bones: 0300000002000000
+      parentGroup: 0
+      order: 0
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: NewFencer
+  prefabAssetName: NewFencer_GO
+  spriteLibAssetName: NewFencer Sprite Lib
+  secondarySpriteTextures: []

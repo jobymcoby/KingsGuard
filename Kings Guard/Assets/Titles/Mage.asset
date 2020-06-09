@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b0f9b6aa836a5499417a3b499e0417, type: 3}
+  m_Name: Mage
+  m_EditorClassIdentifier: 
+  TitleName: Mage
+  CharacterAnimator: {fileID: 22100000, guid: 7d58778aeb49a224bb7a12afe0d8de90, type: 2}
+  sprite: {fileID: 21300002, guid: 331b7a5b1adc92a4fa0ea685553e325d, type: 3}
+  strength: 2
+  magic: 3
+  speed: 3
+  jump: 3
+  constitution: 25
+  armour: 0
+  m_AirControl: 0
+  level: 2

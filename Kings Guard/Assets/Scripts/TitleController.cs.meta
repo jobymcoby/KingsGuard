@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a8062602eb381ea4a90298109d1f3641
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Cultist: {fileID: 11400000, guid: 39a4b72fb67972c4c8e783e041a6cf3a, type: 2}
+  - Barbarian: {fileID: 11400000, guid: ec7e27025f03ada45a1ca3ad5f14bb89, type: 2}
+  - Necromancer: {instanceID: 0}
+  - Druid: {instanceID: 0}
+  - Fencer: {instanceID: 0}
+  - playerMovement: {instanceID: 0}
+  - controller2D: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

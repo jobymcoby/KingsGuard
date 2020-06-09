@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b0f9b6aa836a5499417a3b499e0417, type: 3}
+  m_Name: Necromancer
+  m_EditorClassIdentifier: 
+  TitleName: Necromancer
+  CharacterAnimator: {fileID: 22100000, guid: d2d7fabf8fa915647ac968486edd8aee, type: 2}
+  sprite: {fileID: 21300000, guid: 51186b44ef707c64ea8721b963b9f298, type: 3}
+  strength: 2
+  magic: 10
+  speed: 6
+  jump: 6
+  constitution: 5
+  armour: 3
+  m_AirControl: 0
+  level: 2

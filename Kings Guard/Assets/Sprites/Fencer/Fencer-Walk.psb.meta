@@ -1,0 +1,417 @@
+fileFormatVersion: 2
+guid: e5ca5f0297b15024892bc9dfc29da39e
+ScriptedImporter:
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Fencer-Walk_GO/Fencer-Walk_GO
+  - first:
+      1: 100002
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Butt copy 4
+  - first:
+      1: 100004
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Head copy 4
+  - first:
+      1: 100006
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Left Arm copy 5
+  - first:
+      1: 100008
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Left Leg copy 4
+  - first:
+      1: 100010
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Right Arm copy 3
+  - first:
+      1: 100012
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Right Leg copy 4
+  - first:
+      1: 100014
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Torso copy 4
+  - first:
+      4: 400000
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Transform
+  - first:
+      4: 400002
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Butt copy 4/Transform
+  - first:
+      4: 400004
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Head copy 4/Transform
+  - first:
+      4: 400006
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Left Arm copy 5/Transform
+  - first:
+      4: 400008
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Left Leg copy 4/Transform
+  - first:
+      4: 400010
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Right Arm copy 3/Transform
+  - first:
+      4: 400012
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Right Leg copy 4/Transform
+  - first:
+      4: 400014
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Torso copy 4/Transform
+  - first:
+      28: 2800000
+    second: Fencer-Walk
+  - first:
+      212: 21200000
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Butt copy 4/SpriteRenderer
+  - first:
+      212: 21200002
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Head copy 4/SpriteRenderer
+  - first:
+      212: 21200004
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Left Arm copy 5/SpriteRenderer
+  - first:
+      212: 21200006
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Left Leg copy 4/SpriteRenderer
+  - first:
+      212: 21200008
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Right Arm copy 3/SpriteRenderer
+  - first:
+      212: 21200010
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Right Leg copy 4/SpriteRenderer
+  - first:
+      212: 21200012
+    second: Fencer-Walk_GO/Fencer-Walk_GO/Torso copy 4/SpriteRenderer
+  - first:
+      213: 21300000
+    second: afb261b2ae81c3e46bab01369b736459
+  - first:
+      213: 21300002
+    second: e66aebca2e76f78448c5fa26077963dc
+  - first:
+      213: 21300004
+    second: 5828fd7f043610949b9ce2c0e0f03ef8
+  - first:
+      213: 21300006
+    second: 2b8071df85c827e4bb205639672c8b98
+  - first:
+      213: 21300008
+    second: 01e7acee9a09fba4eb10cbf524f20ede
+  - first:
+      213: 21300010
+    second: 39b561da4717a824fa187326c9a227b5
+  - first:
+      213: 21300012
+    second: 5fa7816ec7b4bb846904e268e5c318e9
+  - first:
+      1001: 100100000
+    second: Fencer-Walk_GO
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Left Arm copy 5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 42
+      width: 7
+      height: 7
+    spriteID: afb261b2ae81c3e46bab01369b736459
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -4, y: 37}
+  - name: Right Leg copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 28
+      width: 10
+      height: 6
+    spriteID: e66aebca2e76f78448c5fa26077963dc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -7, y: 28}
+  - name: Left Leg copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 22
+      y: 28
+      width: 8
+      height: 5
+    spriteID: 5828fd7f043610949b9ce2c0e0f03ef8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 15, y: 28}
+  - name: Butt copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 28
+      width: 7
+      height: 4
+    spriteID: 2b8071df85c827e4bb205639672c8b98
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 28, y: 25}
+  - name: Torso copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 4
+      width: 8
+      height: 8
+    spriteID: 01e7acee9a09fba4eb10cbf524f20ede
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 32, y: -2}
+  - name: Head copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 14
+      height: 16
+    spriteID: 39b561da4717a824fa187326c9a227b5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -4, y: -9}
+  - name: Right Arm copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 4
+      width: 8
+      height: 12
+    spriteID: 5fa7816ec7b4bb846904e268e5c318e9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 8, y: -4}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 64
+  importedTextureHeight: 64
+  documentSize: {x: 32, y: 32}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 64
+  textureActualHeight: 64
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Left Arm copy 5
+    spriteName: Left Arm copy 5
+    isGroup: 0
+    parentIndex: -1
+    spriteID: afb261b2ae81c3e46bab01369b736459
+    layerID: 60
+    mosaicPosition: {x: 4, y: 42}
+  - name: Right Leg copy 4
+    spriteName: Right Leg copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e66aebca2e76f78448c5fa26077963dc
+    layerID: 61
+    mosaicPosition: {x: 4, y: 28}
+  - name: Left Leg copy 4
+    spriteName: Left Leg copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5828fd7f043610949b9ce2c0e0f03ef8
+    layerID: 56
+    mosaicPosition: {x: 22, y: 28}
+  - name: Butt copy 4
+    spriteName: Butt copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2b8071df85c827e4bb205639672c8b98
+    layerID: 54
+    mosaicPosition: {x: 38, y: 28}
+  - name: Torso copy 4
+    spriteName: Torso copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 01e7acee9a09fba4eb10cbf524f20ede
+    layerID: 53
+    mosaicPosition: {x: 42, y: 4}
+  - name: Head copy 4
+    spriteName: Head copy 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 39b561da4717a824fa187326c9a227b5
+    layerID: 51
+    mosaicPosition: {x: 4, y: 4}
+  - name: Right Arm copy 3
+    spriteName: Right Arm copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5fa7816ec7b4bb846904e268e5c318e9
+    layerID: 62
+    mosaicPosition: {x: 26, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Fencer-Walk
+  prefabAssetName: Fencer-Walk_GO
+  spriteLibAssetName: Fencer-Walk Sprite Lib
+  secondarySpriteTextures: []

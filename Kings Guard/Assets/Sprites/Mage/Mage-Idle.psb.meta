@@ -1,0 +1,376 @@
+fileFormatVersion: 2
+guid: 080c679e1377c694c9d3cc3419da6384
+ScriptedImporter:
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Mage-Idle_GO/Mage-Idle_GO
+  - first:
+      1: 100002
+    second: Mage-Idle_GO/Mage-Idle_GO/Body copy 3
+  - first:
+      1: 100004
+    second: Mage-Idle_GO/Mage-Idle_GO/Head copy 3
+  - first:
+      1: 100006
+    second: Mage-Idle_GO/Mage-Idle_GO/Left Arm copy 3
+  - first:
+      1: 100008
+    second: Mage-Idle_GO/Mage-Idle_GO/Legs copy 3
+  - first:
+      1: 100010
+    second: Mage-Idle_GO/Mage-Idle_GO/Right Arm copy 3
+  - first:
+      1: 100012
+    second: Mage-Idle_GO/Mage-Idle_GO/Staff copy 3
+  - first:
+      4: 400000
+    second: Mage-Idle_GO/Mage-Idle_GO/Transform
+  - first:
+      4: 400002
+    second: Mage-Idle_GO/Mage-Idle_GO/Body copy 3/Transform
+  - first:
+      4: 400004
+    second: Mage-Idle_GO/Mage-Idle_GO/Head copy 3/Transform
+  - first:
+      4: 400006
+    second: Mage-Idle_GO/Mage-Idle_GO/Left Arm copy 3/Transform
+  - first:
+      4: 400008
+    second: Mage-Idle_GO/Mage-Idle_GO/Legs copy 3/Transform
+  - first:
+      4: 400010
+    second: Mage-Idle_GO/Mage-Idle_GO/Right Arm copy 3/Transform
+  - first:
+      4: 400012
+    second: Mage-Idle_GO/Mage-Idle_GO/Staff copy 3/Transform
+  - first:
+      28: 2800000
+    second: Mage-Idle
+  - first:
+      212: 21200000
+    second: Mage-Idle_GO/Mage-Idle_GO/Body copy 3/SpriteRenderer
+  - first:
+      212: 21200002
+    second: Mage-Idle_GO/Mage-Idle_GO/Head copy 3/SpriteRenderer
+  - first:
+      212: 21200004
+    second: Mage-Idle_GO/Mage-Idle_GO/Left Arm copy 3/SpriteRenderer
+  - first:
+      212: 21200006
+    second: Mage-Idle_GO/Mage-Idle_GO/Legs copy 3/SpriteRenderer
+  - first:
+      212: 21200008
+    second: Mage-Idle_GO/Mage-Idle_GO/Right Arm copy 3/SpriteRenderer
+  - first:
+      212: 21200010
+    second: Mage-Idle_GO/Mage-Idle_GO/Staff copy 3/SpriteRenderer
+  - first:
+      213: 21300000
+    second: 6d0f30f5fe5c4694489a60d8dea684e2
+  - first:
+      213: 21300002
+    second: e0c3013bbbd7e714d8a8db526bae3af2
+  - first:
+      213: 21300004
+    second: 029906d2a5712ed43905cbe049d7ffea
+  - first:
+      213: 21300006
+    second: 6ffb2de92590673489cad2a78e68823d
+  - first:
+      213: 21300008
+    second: 3126a8b6ce0e002489f47f1814973e3c
+  - first:
+      213: 21300010
+    second: 2646daefd724fe941bd64c9081553888
+  - first:
+      1001: 100100000
+    second: Mage-Idle_GO
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Head copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 21
+      height: 22
+    spriteID: 6d0f30f5fe5c4694489a60d8dea684e2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: -2}
+  - name: Right Arm copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 22
+      y: 34
+      width: 6
+      height: 8
+    spriteID: e0c3013bbbd7e714d8a8db526bae3af2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 16, y: 30}
+  - name: Staff copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 33
+      y: 4
+      width: 10
+      height: 18
+    spriteID: 029906d2a5712ed43905cbe049d7ffea
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 13, y: 4}
+  - name: Left Arm copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 4
+      width: 6
+      height: 9
+    spriteID: 6ffb2de92590673489cad2a78e68823d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 32, y: 0}
+  - name: Body copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 34
+      width: 10
+      height: 10
+    spriteID: 3126a8b6ce0e002489f47f1814973e3c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -6, y: 31}
+  - name: Legs copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 34
+      width: 10
+      height: 4
+    spriteID: 2646daefd724fe941bd64c9081553888
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 27, y: 34}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 64
+  importedTextureHeight: 64
+  documentSize: {x: 32, y: 32}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 64
+  textureActualHeight: 64
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Head copy 3
+    spriteName: Head copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6d0f30f5fe5c4694489a60d8dea684e2
+    layerID: 34
+    mosaicPosition: {x: 4, y: 4}
+  - name: Right Arm copy 3
+    spriteName: Right Arm copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e0c3013bbbd7e714d8a8db526bae3af2
+    layerID: 33
+    mosaicPosition: {x: 22, y: 34}
+  - name: Staff copy 3
+    spriteName: Staff copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 029906d2a5712ed43905cbe049d7ffea
+    layerID: 41
+    mosaicPosition: {x: 33, y: 4}
+  - name: Left Arm copy 3
+    spriteName: Left Arm copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6ffb2de92590673489cad2a78e68823d
+    layerID: 32
+    mosaicPosition: {x: 51, y: 4}
+  - name: Body copy 3
+    spriteName: Body copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3126a8b6ce0e002489f47f1814973e3c
+    layerID: 31
+    mosaicPosition: {x: 4, y: 34}
+  - name: Legs copy 3
+    spriteName: Legs copy 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2646daefd724fe941bd64c9081553888
+    layerID: 30
+    mosaicPosition: {x: 36, y: 34}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Mage-Idle
+  prefabAssetName: Mage-Idle_GO
+  spriteLibAssetName: Mage-Idle Sprite Lib
+  secondarySpriteTextures: []
