@@ -35,8 +35,6 @@ public class Title : ScriptableObject
     private List<string> statName = new List<string>();
     private List<string> statDesc = new List<string>();
 
-    //Constants for move controller
-    private Vector3 m_Velocity = Vector3.zero;
 
     public void Awake()
     {
@@ -106,25 +104,5 @@ public class Title : ScriptableObject
     {
         //Conversion to Health 
         return constitution;
-    }
-
-    //Here is the move controller, I want to make this a component
-
-    public Vector3 Move(
-        float move,                 // Direction
-        Vector2 prevVelocity,       // Previous Velocity
-        float m_MovementSmoothing   // Smoothing Coeffiecent 
-        )
-    {
-        // Move the character by finding the target velocity
-        Vector3 targetVelocity = new Vector2(move*GetSpeed(), prevVelocity.y);
-        // And then smoothing it out
-        return Vector3.SmoothDamp(prevVelocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);    
-    }
-
-    public Vector2 Jump()
-    {
-        // Add a vertical force to the player based on stats
-        return new Vector2(0f, GetJump());
     }
 }
