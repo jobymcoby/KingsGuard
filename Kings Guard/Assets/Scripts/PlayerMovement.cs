@@ -5,37 +5,42 @@ using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private TitleController titleController; // Data Object with title specifics traits
-    private Animator animator_P1;           // Animator that controls what sprite plays
-    private Rigidbody2D body_P1;            // RigidBody used for Physics of the player
+    private TitleController titleController;    // Data Object with title specifics traits
+    private Animator animator_P1;               // Animator that controls what sprite plays
+    private Rigidbody2D body_P1;                // RigidBody used for Physics of the player
 
-    // Player Inputs
+    #region Player Inputs
     float horizontalInput;
     private bool jump = false;
+    #endregion
 
-    // Move Coefficents
+
+    #region Grounding Varibles
+    [SerializeField] private Vector2 groundBox = new Vector2(.48f, .18f);   // Box collider size to check for ground
+    [SerializeField] private bool isGrounded;                               // Whether or not the player is grounded.
+    [SerializeField] private LayerMask whatIsGround;                        // A layermask determining what is ground to the character
+    [SerializeField] private Transform groundCheckCenter;                   // A position marking where to check if the player is grounded.
+    [SerializeField] private Transform ceilingCheckCenter;                  // A position marking where to check for ceilings
+    [SerializeField] private Collider2D crouchDisableCollider;              // A collider that will be disabled when crouching
+    #endregion
+
+    #region Movement Coefficents
     [Range(0, .3f)] [SerializeField] private float movementSmoothing = .05f;
-    private Vector3 m_Velocity = Vector3.zero; 
-    private bool rightFacing = true;                                  
+    private Vector3 m_Velocity = Vector3.zero;
+    private bool rightFacing = true;
+    #endregion
 
-    // No crouch anim
+    #region Crouch Varibles
     private bool crouch = false;                                        // Whether or not the player is crouching. 
-    private bool wasCrouching = false;                                // Not used because no crouch function/animation yet. Also i should use the flip logic to change crouch, not this
-    [Range(0, 1)] [SerializeField] private float crouchSpeed = .36f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
-    const float ceilingRadius = .34f;                                 // Radius of the overlap circle to determine if the player can stand up
+    private bool wasCrouching = false;                                  // Not used because no crouch function/animation yet. Also i should use the flip logic to change crouch, not this
+    [Range(0, 1)] [SerializeField] private float crouchSpeed = .36f;    // Amount of maxSpeed applied to crouching movement. 1 = 100%
+    const float ceilingRadius = .34f;                                   // Radius of the overlap circle to determine if the player can stand up
+    #endregion
 
-    // Grounding
-    [SerializeField] private Vector2 groundBox = new Vector2(.48f, .18f);
-    [SerializeField] private bool isGrounded;                       // Whether or not the player is grounded.
-    [SerializeField] private LayerMask whatIsGround;              // A layermask determining what is ground to the character
-    [SerializeField] private Transform groundCheckCenter;               // A position marking where to check if the player is grounded.
-    [SerializeField] private Transform ceilingCheckCenter;              // A position marking where to check for ceilings
-    [SerializeField] private Collider2D crouchDisableCollider;    // A collider that will be disabled when crouching
-
-
-    //IDK what happens here
+    //This is allows to to subscribe functions to events
     [Header("Events")]
     [Space]
+
     // This tells the animator that the character has landed
     public UnityEvent OnLandEvent;
 
