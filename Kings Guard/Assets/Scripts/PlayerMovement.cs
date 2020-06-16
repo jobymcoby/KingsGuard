@@ -14,7 +14,6 @@ public class PlayerMovement : MonoBehaviour
     private bool jump = false;
     #endregion
 
-
     #region Grounding Varibles
     [SerializeField] private Vector2 groundBox = new Vector2(.48f, .18f);   // Box collider size to check for ground
     [SerializeField] private bool isGrounded;                               // Whether or not the player is grounded.
@@ -36,7 +35,6 @@ public class PlayerMovement : MonoBehaviour
     [Range(0, 1)] [SerializeField] private float crouchSpeed = .36f;    // Amount of maxSpeed applied to crouching movement. 1 = 100%
     const float ceilingRadius = .34f;                                   // Radius of the overlap circle to determine if the player can stand up
     #endregion
-
     //This is allows to to subscribe functions to events
     [Header("Events")]
     [Space]
