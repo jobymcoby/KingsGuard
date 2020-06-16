@@ -5,38 +5,44 @@ using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Vector3 m_Velocity = Vector3.zero;
+    private TitleController titleController;    // Data Object with title specifics traits
+    private Animator animator_P1;               // Animator that controls what sprite plays
+    private Rigidbody2D body_P1;                // RigidBody used for Physics of the player
 
-    public TitleController titleController;                   // Data Object with title specifics traits
-
-    // Player Inputs
+    #region Player Inputs
     float horizontalInput;
     private bool jump = false;
-    private Animator animator_P1;       // Animator that controls what sprite plays
-    private Rigidbody2D body_P1;        // RigidBody used for Physics of the player
-    [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;  // How much to smooth out the movement
+    #endregion
 
+    #region Grounding Varibles
+    [SerializeField] private Vector2 groundBox = new Vector2(.48f, .18f);   // Box collider size to check for ground
+    [SerializeField] private bool isGrounded;                               // Whether or not the player is grounded.
+    [SerializeField] private LayerMask whatIsGround;                        // A layermask determining what is ground to the character
+    [SerializeField] private Transform groundCheckCenter;                   // A position marking where to check if the player is grounded.
+    [SerializeField] private Transform ceilingCheckCenter;                  // A position marking where to check for ceilings
+    [SerializeField] private Collider2D crouchDisableCollider;              // A collider that will be disabled when crouching
+    #endregion
 
-    private bool m_RightFacing = true;  // Whether or not the player is facing right.
-    private bool crouch = false;        // Whether or not the player is crouching. 
-    private bool m_wasCrouching = false;    // Not used because no crouch function/animation yet. Also i should use the flip logic to change crouch, not this
+    #region Movement Coefficents
+    [Range(0, .3f)] [SerializeField] private float movementSmoothing = .05f;
+    private Vector3 m_Velocity = Vector3.zero;
+    private bool rightFacing = true;
+    #endregion
 
-    [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;          // Amount of maxSpeed applied to crouching movement. 1 = 100%
-
-    [SerializeField] float k_GroundedRadius = .34f; // Radius of the overlap circle to determine if grounded
-    const float k_CeilingRadius = .05980872f;  // Radius of the overlap circle to determine if the player can stand up
-    [SerializeField] private bool m_Grounded;                                   // Whether or not the player is grounded.
-    [SerializeField] private LayerMask m_WhatIsGround;                          // A mask determining what is ground to the character
-    [SerializeField] private Transform m_GroundCheck;                           // A position marking where to check if the player is grounded.
-    [SerializeField] private Transform m_CeilingCheck;                          // A position marking where to check for ceilings
-    [SerializeField] private Collider2D m_CrouchDisableCollider;                // A collider that will be disabled when crouching
-
-
-    //IDK what happens here
+    #region Crouch Varibles
+    private bool crouch = false;                                        // Whether or not the player is crouching. 
+    private bool wasCrouching = false;                                  // Not used because no crouch function/animation yet. Also i should use the flip logic to change crouch, not this
+    [Range(0, 1)] [SerializeField] private float crouchSpeed = .36f;    // Amount of maxSpeed applied to crouching movement. 1 = 100%
+    const float ceilingRadius = .34f;                                   // Radius of the overlap circle to determine if the player can stand up
+    #endregion
+    //This is allows to to subscribe functions to events
     [Header("Events")]
     [Space]
+
     // This tells the animator that the character has landed
     public UnityEvent OnLandEvent;
+
+    public BoolEvent OnJumpEvent;
 
     [System.Serializable]
     public class BoolEvent : UnityEvent<bool> { }
@@ -48,9 +54,13 @@ public class PlayerMovement : MonoBehaviour
         // Sets up things i want to change based on title, prolly need to be required
         animator_P1 = GetComponent<Animator>();
         body_P1 = GetComponent<Rigidbody2D>();
+        titleController = GetComponent<TitleController>();
 
         if (OnLandEvent == null)
             OnLandEvent = new UnityEvent();
+
+        if (OnJumpEvent == null)
+            OnJumpEvent = new BoolEvent();
 
         if (OnCrouchEvent == null)
             OnCrouchEvent = new BoolEvent();
@@ -60,50 +70,52 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //Is the player faceing the right way
-        SetFaceDirection(ref m_RightFacing, horizontalInput);
-
-        Debug.DrawRay(m_GroundCheck.position, Vector2.down * k_GroundedRadius);
-
+        SetFaceDirection(ref rightFacing, horizontalInput);
+  
+        // Check to see if you can stand up
         CrouchCheck();
 
         //Allow movement input while grounded or if title has air control
-        if (m_Grounded || titleController.P_1.m_AirControl)
+        if (isGrounded || titleController.P_1.m_AirControl)
         {
             horizontalInput = Input.GetAxisRaw("Horizontal");
             animator_P1.SetFloat("Speed", Mathf.Abs(horizontalInput));
         }
 
         //Allow jump and crouch if grounded
-        if (m_Grounded)
+        if (isGrounded)
         {
-            if (Input.GetKeyDown(KeyCode.Space)) { jump = true; }
+            if (Input.GetKeyDown(KeyCode.Space)) {
+                jump = true;
+                OnJumpEvent.Invoke(true);
+            }
 
             // If crouching disable stuff (no crouch yet)
             if (crouch)
             {
                 //If the crouch button was just pushed
-                if (!m_wasCrouching)
+                if (!wasCrouching)
                 {
-                    m_wasCrouching = true;
+                    wasCrouching = true;
                     OnCrouchEvent.Invoke(true);
                 }
 
                 // Reduce the speed by the crouchSpeed multiplier
-                horizontalInput *= m_CrouchSpeed;
+                horizontalInput *= crouchSpeed;
 
                 // Disable one of the colliders when crouching
-                if (m_CrouchDisableCollider != null)
-                    m_CrouchDisableCollider.enabled = false;
+                if (crouchDisableCollider != null)
+                    crouchDisableCollider.enabled = false;
             }
             else
             {
                 // Enable the collider when not crouching
-                if (m_CrouchDisableCollider != null)
-                    m_CrouchDisableCollider.enabled = true;
+                if (crouchDisableCollider != null)
+                    crouchDisableCollider.enabled = true;
 
-                if (m_wasCrouching)
+                if (wasCrouching)
                 {
-                    m_wasCrouching = false;
+                    wasCrouching = false;
                     OnCrouchEvent.Invoke(false);
                 }
             }
@@ -116,32 +128,34 @@ public class PlayerMovement : MonoBehaviour
         body_P1.velocity = Move(
             horizontalInput * Time.fixedDeltaTime,
             body_P1.velocity,
-            m_MovementSmoothing
+            movementSmoothing
         );
 
         // If the player jumps...
         if (jump)
         {
             body_P1.AddForce(Jump());
-            m_Grounded = false;
+            isGrounded = false;
             jump = false;
         }
 
         //Ground Check
-        bool wasGrounded = m_Grounded;
-        m_Grounded = GroundCheck(wasGrounded);
+        bool wasGrounded = isGrounded;
+        isGrounded = GroundCheck(wasGrounded);
     }
 
+
     public Vector3 Move(
+
         float move,                 // Direction
         Vector2 prevVelocity,       // Previous Velocity
-        float m_MovementSmoothing   // Smoothing Coeffiecent 
+        float smoothing   // Smoothing Coeffiecent 
     )
     {
         // Move the character by finding the target velocity
         Vector3 targetVelocity = new Vector2(move * titleController.P_1.GetSpeed(), prevVelocity.y);
         // And then smoothing it out
-        return Vector3.SmoothDamp(prevVelocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+        return Vector3.SmoothDamp(prevVelocity, targetVelocity, ref m_Velocity, smoothing);
     }
 
     public Vector2 Jump()
@@ -154,10 +168,11 @@ public class PlayerMovement : MonoBehaviour
     {
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
         // This can be done using layers instead but Sample Assets will not overwrite your project settings.  
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(
-            m_GroundCheck.position, //Center
-            k_GroundedRadius, //Radius
-            m_WhatIsGround //Ground Layer
+        Collider2D[] colliders = Physics2D.OverlapBoxAll(
+            groundCheckCenter.position, //Center
+            groundBox,
+            0,
+            whatIsGround
         );
         //Bug here the colliders always come back false when the character is on the ground
         for (int i = 0; i < colliders.Length; i++)
@@ -170,6 +185,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     //Land event to for land animation
                     OnLandEvent.Invoke();
+                    OnJumpEvent.Invoke(false);
                 }
                 return true;
             }
@@ -180,14 +196,14 @@ public class PlayerMovement : MonoBehaviour
     private void CrouchCheck()
     {
         // If crouching, check to see if the character can stand up (no crouch yet)
-        if (!crouch && m_wasCrouching)
+        if (!crouch && wasCrouching)
         {
             // If the character has a ceiling preventing them from standing up, keep them crouching
             if (
                 Physics2D.OverlapCircle(
-                    m_CeilingCheck.position,
-                    k_CeilingRadius,
-                    m_WhatIsGround
+                    ceilingCheckCenter.position,
+                    ceilingRadius,
+                    whatIsGround
                 )
             )
             {
@@ -196,19 +212,19 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-    private void SetFaceDirection(ref bool m_RightFacing, float move)
+    private void SetFaceDirection(ref bool rightFacing, float move)
     {
         // If the input is moving the player right and the player is facing left...
-        if (move > 0 && !m_RightFacing)
+        if (move > 0 && !rightFacing)
         {
             // ... flip the player.
-            Flip(ref m_RightFacing);
+            Flip(ref rightFacing);
         }
         // Otherwise if the input is moving the player left and the player is facing right...
-        else if (move < 0 && m_RightFacing)
+        else if (move < 0 && rightFacing)
         {
             // ... flip the player.
-            Flip(ref m_RightFacing);
+            Flip(ref rightFacing);
         }
         void Flip(ref bool front)
         {
@@ -219,5 +235,12 @@ public class PlayerMovement : MonoBehaviour
             theScale.x *= -1;
             gameObject.transform.localScale = theScale;
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        //Ground Box Gizmo
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(groundCheckCenter.position, groundBox);
     }
 }
