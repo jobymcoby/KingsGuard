@@ -18,8 +18,8 @@ MonoBehaviour:
   strength: 4
   magic: 8
   speed: 8
-  jump: 2
+  jump: 3
   constitution: 6
   armour: 4
-  m_AirControl: 0
+  m_AirControl: 1
   level: 2

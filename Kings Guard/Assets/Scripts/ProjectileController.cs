@@ -7,6 +7,7 @@ public class ProjectileController : MonoBehaviour
 
     public Vector2 projectileDirection;
     public float projectileSpeed; 
+
     // Start is called before the first frame update
     void Start()
     {

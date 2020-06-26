@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 3202853796980829605}
   - component: {fileID: 3202853796980829606}
   - component: {fileID: -3024225728464734084}
-  m_Layer: 0
+  - component: {fileID: 720494781}
+  - component: {fileID: -8839933696272569508}
+  m_Layer: 9
   m_Name: FireballSheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3202853796980829607}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.2730296, y: -0.5175842, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 5, y: 5, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -117,3 +119,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileDirection: {x: 0, y: 0}
   projectileSpeed: 12.95
+--- !u!114 &720494781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3202853796980829607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f404319f63ef604e9a435ff687dea8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileDirection: {x: 0, y: 0}
+  projectileSpeed: 0
+--- !u!58 &-8839933696272569508
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3202853796980829607}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.09416089, y: -0.0025546432}
+  serializedVersion: 2
+  m_Radius: 0.07584171
